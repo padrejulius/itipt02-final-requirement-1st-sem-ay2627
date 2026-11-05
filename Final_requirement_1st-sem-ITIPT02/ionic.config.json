@@ -1,0 +1,7 @@
+{
+  "name": "Final_requirement_1st-sem-ITIPT02",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
