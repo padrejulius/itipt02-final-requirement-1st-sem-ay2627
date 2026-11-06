@@ -11,4 +11,3 @@ import {IonButton, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/an
 export class HomePage {
   constructor() {}
 }
-
