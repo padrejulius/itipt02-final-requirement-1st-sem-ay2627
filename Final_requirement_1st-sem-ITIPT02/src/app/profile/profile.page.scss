@@ -1,0 +1,65 @@
+h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+ion-toolbar {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.profile-card-container {
+    background-color: #d1d5dbd1;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 0 10px;
+    box-shadow: none;
+
+    h2 {
+        font-weight: bold;
+        color: #000;
+        margin-top: 10px;
+        margin-bottom: 4px;
+    }
+
+    .role-text {
+        font-weight: 600;
+        color: #4b5563;
+        margin: 0;
+    }
+
+    .email-text {
+        font-size: 14px;
+        color: #6b7280;
+        margin-top: 4px;
+    }
+}
+
+.profile-avatar {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    border: 3px solid #fff;
+}
+
+.profile-item {
+    --border-radius: 15px;
+    --background: #d1d5dbcd;
+    --color: #000;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+ion-list {
+    background: transparent;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0px 10px;
+}

@@ -1,13 +1,81 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>profile</ion-title>
+    <ion-title>Profile</ion-title>
+    <ion-buttons slot="end" class="ion-padding">
+      <ion-button>
+        <ion-icon name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">profile</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content class="ion-padding">
+  <h1> ADMIN PROFILE </h1>
+
+  <div class="profile-card-container ion-text-center">
+    <ion-avatar class="profile-avatar">
+      <img src="https://ionicframework.com/docs/img/demos/avatar.ionic.png" alt="Admin Avatar"/>
+    </ion-avatar>
+
+    <h2>Juan Dela Cruz</h2>
+    <p class="role-text">Administrator</p>
+    <p class="email-text">admin@example.com</p>
+  </div>
+
+  <h3 class="ion-padding">Account Settings:</h3>
+
+
+  <ion-list lines="none">
+    
+    <ion-item class="profile-item ion-margin-bottom" button routerLink="/admin-edit-profile">
+      <ion-icon name="create-outline" slot="start"></ion-icon>
+      <ion-label>Edit Profile</ion-label>
+      <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
+    </ion-item>
+
+    <ion-item class="profile-item ion-margin-bottom" button (click)="openChangePassword()">
+      <ion-icon name="lock-closed-outline" slot="start"></ion-icon>
+      <ion-label>Change Password</ion-label>
+      <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
+    </ion-item>
+
+    <ion-item class="profile-item logout-item ion-margin-bottom" button routerLink="/home">
+      <ion-icon name="log-out-outline" slot="start" color="danger"></ion-icon>
+      <ion-label color="danger">Log Out</ion-label>
+    </ion-item>
+
+  </ion-list>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-tab-bar>
+      
+      <ion-tab-button tab="attendance">
+        <ion-icon name="calendar-outline"></ion-icon>
+        <ion-label>Attendance</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="history">
+        <ion-icon name="time-outline"></ion-icon>
+        <ion-label>History</ion-label>
+      </ion-tab-button>
+ 
+      <ion-tab-button tab="profile">
+        <ion-icon name="person-outline"></ion-icon>
+        <ion-label>Profile</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="archive">
+        <ion-icon name="archive-outline"></ion-icon>
+        <ion-label>Archive</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="report">
+        <ion-icon name="bar-chart-outline"></ion-icon>
+        <ion-label>Report</ion-label>
+      </ion-tab-button>
+
+    </ion-tab-bar>
+  </ion-toolbar>
+</ion-footer>
